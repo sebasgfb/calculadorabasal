@@ -82,6 +82,7 @@ button:active {
 #error{
 	color: red;
 	font-weight: bold;
+	display: none;
 }
 
 .resultado{
@@ -89,4 +90,5 @@ button:active {
 	font-weight: bold;
 	font-size: 21px;
 	margin-bottom: 5px;
+	display: none;
 }
