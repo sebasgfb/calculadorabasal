@@ -56,7 +56,7 @@ div {
 }
 
 input {
-	width: 70%;
+	width: 30%;
     padding: 12px 15px;
     border: none;
     background-color: #eee;
@@ -64,10 +64,10 @@ input {
 
 button {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 	padding: 12px 45px;
-	border-radius: 30px;
+	border-radius: 20px;
 	background-color: #6da76d;
 	border: 2px solid #000000;
 	color: #f5ff98;
@@ -83,13 +83,11 @@ button:active {
 #error{
     color: red;
     font-weight: bold;
-    display: none;
 }
 
 .resultado{
-    color: #0A81D1;
+    color: #337533;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 21px;
     margin-bottom: 5px;
-    display: none;
 }
