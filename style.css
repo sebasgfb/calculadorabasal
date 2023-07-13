@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-h1 {
-	color: #6da76d;
-}
+
 
 body{
 	background: linear-gradient(90deg, rgba(102,215,91,1) 8%, rgba(232,255,0,1) 100%);
@@ -10,19 +8,19 @@ body{
 	color: #1d1c1d;
 }
 
-div {
-	color:rgb(60, 110, 55)
+h1 {
+	color: #5b9c6a;
 }
-
 #lista{
-	text-align: justify;
+	text-align: left;
+	font-size: 14;
 }
 
 #contenedor{
 	width: 900px;
 	height: 500px;
 	border: 3px solid #000000;
-	border-radius: 10px;
+	border-radius: 30px;
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0,0,0,0.20);
 	overflow: hidden;
 	text-align: center;
@@ -56,6 +54,7 @@ div {
 	transform: translateY(-50%);
 	overflow: hidden;
 	padding: 40px;
+	color:rgb(60, 110, 55)
 }
 
 input {
@@ -84,15 +83,13 @@ button:active {
 }
 
 #error{
-	color: red;
+	color: rgb(238, 101, 101);
 	font-weight: bold;
-	display: none;
 }
 
 .resultado{
-	color: #337533;
+	color: #537a53;
 	font-weight: bold;
-	font-size: 21px;
+	font-size: 15px;
 	margin-bottom: 5px;
-	display: none;
 }
