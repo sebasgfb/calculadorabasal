@@ -25,11 +25,13 @@ function calcularHolliday(peso){
 
 // Función para calcular por Superficie Corporal
 function calcularSuperficie(peso){
-    let volumenDiario;
+    let vd;
+    let vd2;
     let superficieCorporal;
     superficieCorporal = ((peso * 4) + 7) / (peso + 90);
-    volumenDiario = superficieCorporal * 2000;
-    return volumenDiario;
+    vd = superficieCorporal * 1500;
+    vd2= superficieCorporal * 2000
+    return [vd,vd2];
 }
 
 // Función para calcular la hidratación
@@ -56,15 +58,12 @@ function calcularHidratacion() {
             MM2.textContent = `m+m/2: ${mm2.toFixed(2)} cc/h`;
         } else {
             // Calcular por Superficie Corporal
-            let superficieCorporal = 0;
-            let mantenimiento = 0;
+            MM2.textContent = '';
             volumenDiario = calcularSuperficie(peso);
-            mantenimiento = volumenDiario / 24;
-            mm2 = mantenimiento * 1.5;
+
             // Mostrar resultados
-            VOLDIA.textContent = `Volumen diario: ${volumenDiario.toFixed(2)} cc/día`;
-            MANT.textContent = `Mantenimiento: ${mantenimiento.toFixed(2)} cc/h`;
-            MM2.textContent = `m+m/2: ${mm2.toFixed(2)} cc/h`;
+            VOLDIA.textContent = `Volumen diario (1500): ${volumenDiario[0].toFixed(2)} cc/día`;
+            MANT.textContent = `Volumen diario (2000): ${volumenDiario[1].toFixed(2)} cc/día`;
         }
     }
 }
